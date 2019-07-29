@@ -33,9 +33,18 @@ p{
 .container{
 	width: 50%;
 	height: 100vh;
+	display: flex;  
+}
+
+.sec{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	text-align: center;   
+	text-align: center; 
+}
+
+i{
+	font-size: 10rem;
+	padding: 5rem;
 }
