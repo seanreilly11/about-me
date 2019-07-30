@@ -7,23 +7,23 @@
 html{
 	position: relative;
 	scroll-behavior: smooth;
+	font-size: 20px;
 }
 
 body{
 	font-family: Courier, sans-serif;
-	font-size: 20px;
 	min-height: 100vh;
 	background: radial-gradient(#6dd5ed,#2193b0);
 	color: #fff;
 }
 
 h1{
-	font-size: 4rem;
+	font-size: 3rem;
 	padding: .7em;
 }
 
 p{
-	font-size: 20px;
+	font-size: 1rem;
 	line-height: 2;
 	padding: 1em;
 }
@@ -31,24 +31,29 @@ p{
 nav{
 	position: fixed;
 	top: 50%;
-	left: 0;
+	left: -1px;
 	transform: translateY(-50%);
 	z-index: 1;
 	text-align: center;
+	border: 1px solid #fff
 }
 
 nav li{
 	padding: 1em;
-	border-bottom: 1px solid #fff;
-}
-
-nav li:nth-child(1){
-	border-top: 1px solid #fff;
+	list-style-type: none;
 }
 
 nav i{
 	font-size: 2.5rem;
 	color: #fff;
+}
+
+nav i:hover{
+	color: #d3d3d3;
+}
+
+nav .active{
+
 }
 
 .wrapper{
@@ -61,7 +66,7 @@ nav i{
 
 .container{
 	width: 60%;
-	min-width: 50%;
+	min-width: 750px;
 	height: 100vh;
 	display: flex;
 }
@@ -85,4 +90,22 @@ nav i{
 
 #link{
 	color: #fff;
+}
+
+@media screen and (max-width:950px) {
+	nav{
+		top: 100%;
+		left: 50%;
+		transform: translate(-40%,-100%);
+		width: 400px;
+	}
+	nav ul{
+		display: flex;
+	}
+}
+
+@media screen and (max-width:800px) {
+	html{
+		font-size: 18px;
+	}
 }
