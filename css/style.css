@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+html{
+	position: relative;
+	scroll-behavior: smooth;
+}
+
 body{
 	font-family: Courier, sans-serif;
 	min-height: 100vh;
@@ -20,10 +25,33 @@ p{
 	font-size: 20px;
 	line-height: 2;
 	padding: 1em;
-} 
+}
+
+nav{
+	position: fixed;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	z-index: 1;
+	text-align: center;
+}
+
+nav li{
+	padding: 1em;
+	border-bottom: 1px solid #fff;
+}
+
+nav li:nth-child(1){
+	border-top: 1px solid #fff;
+}
+
+nav i{
+	font-size: 2rem;
+	color: #fff;
+}
 
 .wrapper{
-	height: 100vh
+	height: 100vh;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -32,8 +60,9 @@ p{
 
 .container{
 	width: 50%;
+	min-width: 50%;
 	height: 100vh;
-	display: flex;  
+	display: flex;
 }
 
 .sec{
@@ -41,10 +70,14 @@ p{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	text-align: center; 
+	text-align: center;
 }
 
-i{
+.sec i{
 	font-size: 10rem;
 	padding: 5rem;
+}
+
+#link{
+	color: #fff;
 }
