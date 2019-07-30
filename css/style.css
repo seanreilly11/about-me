@@ -11,13 +11,14 @@ html{
 
 body{
 	font-family: Courier, sans-serif;
+	font-size: 20px;
 	min-height: 100vh;
 	background: radial-gradient(#6dd5ed,#2193b0);
 	color: #fff;
 }
 
 h1{
-	font-size: 4em;
+	font-size: 4rem;
 	padding: .7em;
 }
 
