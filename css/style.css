@@ -60,7 +60,7 @@ nav i{
 }
 
 .container{
-	width: 50%;
+	width: 60%;
 	min-width: 50%;
 	height: 100vh;
 	display: flex;
@@ -72,6 +72,10 @@ nav i{
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+
+.text{
+	flex-grow: 1;
 }
 
 .sec i{
