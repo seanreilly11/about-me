@@ -7,7 +7,7 @@
 html{
 	position: relative;
 	scroll-behavior: smooth;
-	font-size: 20px;
+	font-size: 22px;
 }
 
 body{
@@ -52,10 +52,6 @@ nav i:hover{
 	color: #d3d3d3;
 }
 
-nav .active{
-
-}
-
 .wrapper{
 	height: 100vh;
 	width: 100%;
@@ -92,15 +88,50 @@ nav .active{
 	color: #fff;
 }
 
-@media screen and (max-width:950px) {
+@media screen and (max-width:1310px) {
+	.row-at-1310{
+		flex-direction: row;
+	}
+
+	.col-at-1310{
+		flex-direction: column;
+	}
+
+	#top{
+		order: 1;
+	}
+
+	#bottom{
+		order: 2;
+	}
+
+	.text{
+		flex-grow: 0;
+	}
+}
+
+@media screen and (max-width:927px) {
 	nav{
 		top: 100%;
-		left: 50%;
-		transform: translate(-40%,-100%);
-		width: 400px;
+		transform: translate(1px,-100%);
+		width: 100%;
+		border-right: none;
+		border-left: none;
+		background: #2193b0;
+		display: flex;
+		justify-content: center;
 	}
 	nav ul{
 		display: flex;
+	}
+
+	.container{
+		width: 70%;
+		min-width: 625px;
+	}
+
+	.row-at-1310{
+		flex-direction: column;
 	}
 }
 
@@ -108,4 +139,25 @@ nav .active{
 	html{
 		font-size: 18px;
 	}
+
+	.container{
+		width: 80%;
+		min-width: 500px;
+		flex-direction: column;
+	}
+
+	#main{
+		margin-top: 1rem;
+	}
+}
+
+@media screen and (max-width:570px) {
+	.container{
+		width: 90%;
+		min-width: 250px;
+	}
+}
+
+@media screen and (max-width:570px) {
+	/*sections start to overlap here*/
 }
